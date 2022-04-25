@@ -1,0 +1,347 @@
+/* .bg{
+  background-color: #212529;
+}
+.header .container {
+  justify-content: center;
+  background-color: #212529;
+}
+.input-group-text {
+  background-color: #212529;
+  color: #fff;
+  font-weight: bold;
+}
+.edit,
+.delete {
+  padding: 0px 6px;
+  border-radius: 2px;
+}
+
+.edit {
+  margin-right: 10px;
+}
+table {
+  text-align: center;
+}
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+} */
+
+:root {
+  --white-color: #069A77;
+  --light-grey-color: #EAE8E8;
+  --light-green-color: #1ecc78;
+  --green-color: #0cb765;
+  --bakeli-color: #35A889;
+  --blue-color: #4f78a4;
+  --dark-red-color: #d31017;
+  --dark-grey-color: #363636;
+  --black-color: #333030;
+  --deep-black-color: #000000;
+}
+
+* {
+  font-family: 'Roboto', sans-serif;
+}
+
+h1 {
+  font-family: 'Bangers', cursive;
+  font-size: 70px;
+  color: var(--white-color);
+  font-weight: normal;
+  text-align: center;
+  letter-spacing: 6px;
+  cursor: pointer;
+  margin: 0 auto;
+}
+
+h1 a {
+  color: inherit;
+  text-decoration: none;
+  font-family: 'Bangers', cursive;
+}
+
+h1 a:hover {
+  color: inherit;
+}
+
+h2,
+h3 {
+  font-weight: normal;
+  text-align: left;
+  font-family: 'Roboto Condensed', sans-serif;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-image: url(images/bg-noise-texture.png);
+  background-repeat: repeat;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+hr {
+  border: 0;
+  height: 0;
+  border-top: 1px solid #069a77be;;
+  border-bottom: 1px solid #066e56a2;;
+  margin: 10px 0;
+}
+/* * SIGNUP - LOGIN - FORGETPASSWORD */ 
+.signUpLoginBox {
+  /* background-image: url(images/bg-noise-texture.png); */
+  background-repeat: repeat;
+  -webkit-box-shadow: inset 0px 143px 108px -18px rgba(0, 0, 0, 0.39);
+  -moz-box-shadow: inset 0px 143px 108px -18px rgba(0, 0, 0, 0.39);
+  box-shadow: inset 0px 143px 108px -18px rgba(0, 0, 0, 0.39);
+  display: flex;
+  justify-content: center;
+}
+
+.slContainer {
+  flex: 0 1 80%;
+  display: flex;
+}
+
+.formBoxLeftSignup {
+  min-height: 500px;
+  /* background-image: url(images/Sign.png);  */
+  background-repeat: no-repeat;
+  background-position: center center;
+  flex: 0 1 50%;
+}
+
+.formBoxLeftLogin {
+  min-width: 200px;
+  min-height: 500px;
+  background-image: url(images/login.png);
+  background-repeat: no-repeat;
+  background-position: center center;
+  
+}
+
+.formBoxLeftForget {
+  min-height: 500px;
+  /* background-image: url(images/deadpool.png); */
+  background-repeat: no-repeat;
+  background-position: center center;
+  flex: 0 1 50%;
+}
+
+.formBoxRight {
+  flex: 0 1 50%;
+}
+
+.formBoxRight span {
+  display: block;
+  color: var(--bakeli-color);
+  text-align: center;
+  border: 1px solid var(--bakeli-color);
+  padding: 10px;
+  margin: 15px 0;
+}
+
+.formContent {
+  width: 100%;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.formContent h2 {
+  margin: 0 0 40px 0;
+  padding: 0;
+  color: var(--white-color);
+  text-transform: uppercase;
+}
+
+.formContent .inputBox {
+  position: relative;
+  height: 80px;
+}
+
+.formContent .inputBox input {
+  width: 100%;
+  padding: 10px 0;
+  font-size: 17px;
+  color: var(--bakeli-color);
+  text-transform: uppercase;
+  font-weight: bold;
+  margin-bottom: 30px;
+  border: none;
+  background: transparent;
+  border-bottom: 1px solid var(--white-color);
+  outline: none;
+}
+
+.formContent .inputBox label {
+  color: var(--white-color);
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 10px 0;
+  font-size: 17px;
+  pointer-events: none;
+  -webkit-transition: 0.2s ease-in;
+  -moz-transition: 0.2s ease-in;
+  -o-transition: 0.2s ease-in;
+  transition: 0.2s ease-in;
+}
+
+.formContent .inputBox input:focus~label,
+.formContent .inputBox input:valid~label {
+  top: -30px;
+  left: 0;
+  color: var(--white-color);
+  font-size: 16px;
+  font-style: italic;
+}
+
+/* Form buttons */
+.formContent button {
+  margin-left: 0;
+  display: block;
+  margin: 0 auto 20px;
+  min-width: 150px;
+  background-color: transparent;
+  color: var(--white-color);
+  padding: 7px;
+  font-size: 15px;
+  border-radius: 5px;
+}
+
+.formContent button:hover {
+  background-color: var(--bakeli-color);
+  color: var(--white-color);
+  cursor: pointer;
+}
+
+button:disabled,
+button[disabled],
+button:disabled:hover,
+button[disabled]:hover {
+  border: 1px solid var(--light-grey-color);
+  background-color: var(--white-color);
+  color: var(--deep-black-color);
+  opacity: 0.65;
+  cursor: not-allowed;
+}
+
+.linkContainer {
+  height: 50px;
+  margin-top: 35px;
+  padding-top: 15px;
+  border-top: 1px dashed var(--light-grey-color);
+}
+
+.simpleLink {
+  color: var(--white-color);
+  text-decoration: none;
+  font-size: 12px;
+}
+
+.simpleLink:hover {
+  color: var(--bakeli-color);
+}
+/* END SIGNUP - LOGIN - FORGETPASSWORD */
+
+/* MAIN */
+main {
+  flex-grow: 1;
+}
+/* END MAIN */
+
+/* WELCOME PAGE */
+/* .welcomePage {
+  background-color: var(--red-color);
+  background-image: url(images/librairie.png);
+  background-repeat: no-repeat;
+  background-size: cover; 
+  background-position: center;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  height: 500px; 
+  
+  padding-top: 200px; 
+} */
+
+/* .startingImg {
+  background-image: url(images/xmen.png);
+} */
+
+/* .leftImg {
+  background-image: url(images/wolverine.png), url(images/griffes-gauche.png);
+}
+
+.rightImg {
+  background-image: url(images/wolverine.png), url(images/griffes-droit.png);
+} */
+
+.leftBox {
+  display: flex;
+  flex: 0 1 35%;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+
+.rightBox {
+  display: block;
+  align-items: flex-start;
+  padding-top: 50px;
+}
+.rightBox > p {
+  color: var(--bakeli-color);
+}
+
+.btn-welcome {
+  border: 2px solid var(--white-color);
+  color: var(--white-color);
+  padding: 12px 25px;
+  border-radius: 5px;
+  background-color: transparent;
+  font-weight: normal;
+  font-size: 19px;
+  text-align: center;
+  text-decoration: none;
+  margin-top: 50px;
+  margin-left: 15px;
+}
+
+.btn-welcome:hover {
+  border: 2px solid var(--white-color);
+  color: var(--red-color);
+  background-color: var(--white-color);
+}
+/* END WELCOME PAGE */
